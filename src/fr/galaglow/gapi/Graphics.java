@@ -16,8 +16,20 @@ public class Graphics {
 
     public static class InitializeGraphic {
 
-        private ArrayList<Integer> values;
         private GraphicsTypes gType;
+
+        private Integer Y_AXIS;
+        private Integer X_AXIS;
+
+        public Graphics create() {
+
+            Graphics graph = new Graphics();
+
+            graph.gType = this.gType;
+            graph.Y_AXIS = this.Y_AXIS;
+            graph.X_AXIS = this.X_AXIS;
+
+        }
 
     }
 
